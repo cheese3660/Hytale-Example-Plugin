@@ -1,6 +1,7 @@
 plugins {
     `maven-publish`
     id("hytale-mod") version "0.+"
+    kotlin("jvm") version "2.3.0"
 }
 
 group = "com.example"
@@ -17,6 +18,7 @@ repositories {
 dependencies {
     compileOnly(libs.jetbrains.annotations)
     compileOnly(libs.jspecify)
+    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 }
 
 hytale {
